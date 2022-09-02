@@ -37,7 +37,8 @@ class Espresso {
     }
 }
 class LatteFactory {
-    static createCoffe() {
+    static createCoffe() { // => static(정적 메소드) 를 쓰면 클래스의 인스턴스 없이 호출 가능하므로 메모리 절약 됨. 
+                          //  => 개별 인스턴스에 묶이지 않으며 클래스 내의 함수를 정의할 수 있는 장점이 있음.
         return new Latte()
     }
 }
